@@ -368,7 +368,9 @@ on github and again deploy this on render
 
 
 # to deploy frontend first make a build file in frontend 
-cd frontend 
+```bash
+cd frontend
+``` 
 go to public folder and make a netlify.toml file in this write the below code
 ```bash
 [[redirects]]
