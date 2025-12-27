@@ -1,5 +1,7 @@
 # FastAPI URL Shortener
 
+https://codesera-url-shortener.netlify.app/
+
 A full-stack URL shortener application built with FastAPI (backend) and React (frontend). This application allows users to shorten long URLs, manage them, and track all shortened links.
 
 ![FastAPI URL Shortener](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
