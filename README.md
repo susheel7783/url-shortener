@@ -318,3 +318,70 @@ git remote add origin https://github.com/YOUR_USERNAME/fastapi-url-shortener.git
 bash
 git branch -M main
 git push -u origin main
+
+
+
+##  --------------push code to github ------------
+
+1. Initialize Git repository
+```bash
+git init
+```
+2. Add all files
+```bash
+git add .
+```
+3. Create your first commit
+```bash
+git commit -m "Initial commit: FastAPI URL Shortener with React frontend"
+```
+4. Create a new repository on GitHub
+
+Go to https://github.com/new
+Enter repository name: fastapi-url-shortener (or your preferred name)
+Choose Public or Private
+DON'T initialize with README (you already have one)
+Click "Create repository"
+
+5. Link your local repo to GitHub
+Replace YOUR_USERNAME with your GitHub username:
+```bash
+git remote add origin https://github.com/YOUR_USERNAME/fastapi-url-shortener.git
+```
+6. Push to GitHub
+```bash
+git branch -M main
+git push -u origin main
+```
+
+
+# deploy fastapi backend on render.com and render will give a link here you can see your backend 
+to make fully working replace the render provided url in frontend source/app.js code 
+where we written see the below
+
+replace this to below line.      const API_BASE = 'http://localhost:8000'; // for local development
+                                 const API_BASE = 'https://codesera-url-shortener.onrender.com';   // for production or deployed backend (deply on render, paste the render provided link here)
+
+and in backend whereever you mention localhost replace with this link 
+"https://codesera-url-shortener.onrender.com" 
+on github and again deploy this on render
+
+
+# to deploy frontend first make a build file in frontend 
+cd frontend 
+go to public folder and make a netlify.toml file in this write the below code
+```bash
+[[redirects]]
+from="/*"
+to="/index.html"
+status=200
+```
+
+and then run
+```bash
+npm run build
+```
+by npm run build command it will make  a build file 
+now go to netlify.com and select manual deploy and drag and drp this build file here
+it will deploy and give the link
+you can also change the link name , go to project configuration and change the nme
