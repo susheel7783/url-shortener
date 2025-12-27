@@ -359,8 +359,13 @@ git push -u origin main
 to make fully working replace the render provided url in frontend source/app.js code 
 where we written see the below
 
-replace this to below line.      const API_BASE = 'http://localhost:8000'; // for local development
-                                 const API_BASE = 'https://codesera-url-shortener.onrender.com';   // for production or deployed backend (deply on render, paste the render provided link here)
+replace this to below line.      
+```bash
+const API_BASE = 'http://localhost:8000'; // for local development
+```
+```bash
+const API_BASE = 'https://codesera-url-shortener.onrender.com';   // for production or deployed backend (deply on render, paste the render provided link here)
+```
 
 and in backend whereever you mention localhost replace with this link 
 "https://codesera-url-shortener.onrender.com" 
